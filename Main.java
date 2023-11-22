@@ -35,7 +35,11 @@ public class Main {
 
     // Méthode pour le problème de division par zéro
     public static int calculateValue(int a, int b) {
-        return a / b;
+    	if (b == 0) {
+            return 0;
+    }	
+    	return a / b;
+        
     }
 
     // Méthode pour le problème d'utilisation incorrecte d'une méthode de classe
